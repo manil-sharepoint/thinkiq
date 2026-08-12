@@ -67,13 +67,6 @@ svg {
   display: block;
 }
 
-.svg-defs {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
 .site-header {
   position: sticky;
   top: 0;
@@ -95,52 +88,16 @@ svg {
 }
 
 .brand-mark {
-  width: 58px;
+  width: 64px;
   height: 42px;
   flex: 0 0 auto;
-  filter: drop-shadow(0 0 14px rgba(24, 215, 245, 0.32));
 }
 
-.brand-mark svg,
-.core-logo {
+.brand-mark img {
   width: 100%;
   height: 100%;
-  overflow: visible;
-}
-
-.network-loop,
-.network-arm {
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.network-loop {
-  stroke: url(#brandLoop);
-  stroke-width: 18;
-  opacity: 0.96;
-  filter: drop-shadow(0 0 12px rgba(33, 119, 255, 0.55));
-}
-
-.network-arm {
-  stroke: #0f63ee;
-  stroke-width: 10;
-  opacity: 0.92;
-  filter: drop-shadow(0 0 10px rgba(31, 112, 255, 0.55));
-}
-
-.network-node {
-  filter: drop-shadow(0 0 18px currentColor);
-}
-
-.network-node.cyan {
-  color: #18d7f5;
-  fill: #18d7f5;
-}
-
-.network-node.green {
-  color: #22df8c;
-  fill: #22df8c;
+  object-fit: contain;
+  object-position: center;
 }
 
 .brand strong {
@@ -452,25 +409,11 @@ h1 span,
 }
 
 .core-logo {
-  width: 108px;
-  height: 72px;
-  margin-bottom: -4px;
-  transform: translateX(-2px);
-  filter: drop-shadow(0 0 22px rgba(24, 215, 245, 0.22));
-}
-
-.core-logo .network-loop {
-  stroke-width: 16;
-  opacity: 0.9;
-  filter: drop-shadow(0 0 18px rgba(33, 119, 255, 0.62));
-}
-
-.core-logo .network-arm {
-  stroke-width: 9;
-}
-
-.core-logo .network-node {
-  r: 10px;
+  width: 112px;
+  height: 74px;
+  object-fit: contain;
+  object-position: center;
+  margin-bottom: -6px;
 }
 
 .core-node strong,
@@ -1012,7 +955,7 @@ h1 span,
 }
 
 .site-footer .brand-mark {
-  width: 50px;
+  width: 56px;
   height: 36px;
 }
 
